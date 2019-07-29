@@ -42,12 +42,17 @@
 	line-height: 40px;
 }
 
-.menu-Items ul li a{
+.menu-Items ul li a{	
+	font-family: 'hind',sans-serif;
+	font-weight: 400;
 	color: white;
 	padding:0px 15px;
 	text-decoration:none;
 }
 
+.menu-Items ul li a:hover{
+	color: #999999;
+}
 
 .logo-block{
 	float: right;
@@ -78,8 +83,35 @@
 	position: relative;
 }
 
-.banner img{
+.banner ul{
+	list-style-type: none;
+}
+
+.banner ul li{
+	position: relative;
+}
+
+.banner ul li:last-child{
+	display: none;
+}
+
+.banner ul li img{
 	width: 100%;
+}
+
+.banner-slider{
+	position: absolute;
+	font-family: hind;
+	font-weight: 400;
+	top: 46%;
+	right: -50px;
+	transform: rotate(-90deg);
+	color: white;
+}
+
+.banner-slider span a{
+	color: white;
+	text-decoration: none;
 }
 
 .banner-content-block{
@@ -91,8 +123,6 @@
 	color: white;
 	z-index: 15;
 }
-
-
 
 .banner-content p{
 	font-family: 'Hind', sans-serif;
@@ -126,18 +156,20 @@
 
 .text-fields input{
 	height: 50px;
-	width: 100%;
+	padding-left: 15px;
+	width: 90%;
+	margin-top:9px;
 	border: none;
 }
 
 .name-input{
-	width: 48%;
-	float: left;
+	width: 95%;
+	padding-left: 15px; 
 }
 
 .mail-input{
-	width: 48%;
-	float: right;
+	width: 95%;
+	padding-left: 15px;
 }
 
 .subscribe-Button{
@@ -162,13 +194,38 @@
 	width: 100%;
 }
 
-
 .gallery-content img{
 	width: 100%;
+	margin-bottom: 1px;
 }
 
 .gallery-wrapper{
 	line-height: 0px;
+}
+
+.gallery-left{
+	width: 33%;
+	float: left;
+}
+
+.gallery-right{
+	width: 66.5555%;
+	float: right;
+}
+
+.gallery-mid{
+	width: 49%;
+	float: left;
+}
+
+.gallery-real-right{
+	width: 50%;
+	float: right;
+}
+
+.youtube-wrapper{
+	line-height: 0px;
+	height: 300px;
 }
 
 .content-wrapper{
@@ -541,7 +598,7 @@
 
 .social-icons-wrapper ul li{
 	float: left;
-	margin-right: 50px;
+	margin-right: 35px;
 }
 
 .social-icons-wrapper ul li a{
@@ -745,7 +802,39 @@
 	font-weight: 400;
 }
 
+iframe{
+	width: 100%;
+}
+
+@media only screen and (min-width: 375px){
+	.social-icons-wrapper ul li{
+		margin-right: 50px;
+	}
+}
+
 @media only screen and (min-width: 768px){
+
+	#slider-wrapper{
+		display: none;
+	}
+
+	.text-fields input{
+		margin-top: 0px;
+	}
+
+	.name-input{
+		width: 48%;
+		float: left;
+	}
+
+	.mail-input{
+		width: 48%;
+		float: right;
+	}
+
+	.youtube-wrapper{
+		height: 555px;
+	}
 
 	.menu-Items ul li{
 		float: left;
@@ -837,6 +926,10 @@
 
 @media only screen and (min-width: 1024px){
 
+	#slider-wrapper{
+		display: block;
+	}
+
 	.right-header ul li{	
 		display: block;
 		float:right;
@@ -882,18 +975,16 @@
 
 	.text-fields input{
 		padding-left: 30px;	
-		width: 100%;
 		border: none;
 	}
 
 	.name-input{
-		width: 44.5%;
+		width: 44%;
 		margin-left: 30px;
 	}
 
 	.mail-input{
-		margin-right: 15px;
-		width: 44.5%;
+		width: 44%;
 	}
 
 	.subscribe-Button{
@@ -950,6 +1041,15 @@
 }
 
 @media only screen and (min-width: 1354px){
+
+	.name-input{ 
+		width: 46%; 
+		margin-left: 30px; 
+	}
+
+	.mail-input{
+		width: 46%;
+	}
 
 	.banner-content p{
 		font-size: 15px;

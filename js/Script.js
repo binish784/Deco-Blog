@@ -61,12 +61,6 @@ class Slider{
 		}.bind(this),this.HOLD_TIME);
 	}
 
-	resizeSlider(){
-		this.IMAGE_HEIGHT=this.images[0].clientHeight;
-		this.IMAGE_WIDTH=this.images[0].clientWidth;
-		this.image_roll.style.width=this.IMAGE_NUM*this.IMAGE_WIDTH + "px";
-		this.slider_wrapper.style.height=this.IMAGE_HEIGHT+"px";
-	}
 
 	toggleButtons(flag){
 		if(flag==true){
@@ -161,10 +155,6 @@ class Slider{
 var slider_wrapper=document.getElementById("slider-wrapper");
 let slider=new Slider(slider_wrapper);
 slider.slide();
-
-window.onresize=function(){
-	slider.resizeSlider();
-}
 
 var menu_block=document.getElementById("menu-block");
 var flag=true;
