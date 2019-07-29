@@ -498,6 +498,12 @@
 	margin-top: 0px;
 }
 
+
+.latest-post-content{
+	float: right;
+	width: 60%;
+}
+
 .latest-post-status{
 	color: #a9a9a9;
 	font-family: 'hind', sans-serif;
@@ -531,9 +537,91 @@
 	margin-right: 0px;
 }
 
-.slider-container img{
-	width: 100%;
+
+.clearfix:after{
+	clear: both;
+	content: "";
+	display:table;	
 }
+
+#slider-wrapper{
+	width: 100%;	
+	overflow: hidden;
+	position: relative;
+}
+
+#slider{
+	position: absolute;
+}
+
+#slider img{
+	float: left;
+}
+
+.buttons_overlay{
+	width: 100%;
+	position: absolute;
+	z-index: 20;
+	display: block;
+	top: 50%;
+	transform: translateY(-25px);
+	
+}
+
+#right_slide_button{
+	text-decoration: none;
+	width: 10%;
+	float: right;
+	font-size: 45px;
+	background-color: grey;
+	color: white;
+}
+
+#left_slide_button{
+	font-size: 45px;
+	background-color: grey;
+	text-decoration: none;
+	width: 10%;
+	float: left;
+	color: white;
+}
+
+.slide_button:hover{
+	background-color: snow;
+	opacity: 0.5;
+}
+
+#slider_indicator{
+	bottom: 0;
+	z-index: 10;
+	width: 100%;
+	opacity: 0.9;
+	display: block;
+	position: absolute;
+	background-color: grey;	
+}
+
+#slider_indicator ul{
+	list-style: none;
+	padding: 10px;
+	display: block;
+	color: white;
+}
+
+#slider_indicator ul li{
+	margin: 10px;
+	float: left;
+	background-color: black;
+}
+
+#slider_indicator ul li a{
+	height: 10px;
+	width: 10px;
+	display: block;
+	background-color: black;
+}
+
+
 
 .facebook-widget-container img{
 	width: 100%;
