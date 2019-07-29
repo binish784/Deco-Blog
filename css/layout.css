@@ -30,6 +30,25 @@
 	display:  block;
 }
 
+.menu-Items{
+	display: none;
+}
+
+.menu-Items ul {
+	list-style: none;
+}
+
+.menu-Items ul li{
+	line-height: 40px;
+}
+
+.menu-Items ul li a{
+	color: white;
+	padding:0px 15px;
+	text-decoration:none;
+}
+
+
 .logo-block{
 	float: right;
 }
@@ -728,6 +747,9 @@
 
 @media only screen and (min-width: 768px){
 
+	.menu-Items ul li{
+		float: left;
+	}
 
 	.top-quote-block{
 		padding: 95px 100px 0px 55px;
