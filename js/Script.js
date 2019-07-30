@@ -77,40 +77,7 @@ class Slider{
 			})		
 		}				
 	}
-
-	// renderIndicators(){
-	// 	var slider_indicator=document.createElement("div");
-	// 	slider_indicator.id="slider_indicator";
-
-	// 	var indicator_ul = document.createElement("ul");
-	// 	indicator_ul.className='clearfix';
-	// 	indicator_ul.id='box';
-	// 	slider_indicator.appendChild(indicator_ul);
-	// 	this.slider_wrapper.appendChild(slider_indicator);
-
-	// 	for(var j=0;j<this.IMAGE_NUM;j++){
-	// 		var pointer=document.createElement("li");
-	// 		var clickable=document.createElement("a");
-	// 		clickable.className='indi';
-	// 		clickable.href="#";
-	// 		clickable.id=j;
-	// 		indicator_ul.appendChild(pointer);
-	// 		pointer.appendChild(clickable);
-	// 		this.indicators.push(clickable);
-	// 	}
-
-	// 	slider_indicator.addEventListener('click',function(e){
-	// 		if(e.target.className=='indi'){
-	// 			clearTimeout(this.timeout);
-	// 			clearInterval(this.interval);
-	// 			this.new_index=Number(e.target.id);
-	// 			console.log(this.new_index);
-	// 			this.slide();
-	// 		}
-	// 	}.bind(this))
 	
-	// }
-
 	renderArrows(){
 		var buttons_overlay=document.createElement("div");
 		buttons_overlay.className="buttons_overlay";
@@ -169,3 +136,50 @@ function showMenu(){
 	}
 }
 
+
+let vertical_index=0;
+let banner=document.getElementsByClassName("banner")[0];	
+let BannerItems = banner.getElementsByTagName("li");
+let NUM_OF_BANNERS=BannerItems.length;
+
+
+
+function changeBanner(flag){
+	if(flag==true){
+		vertical_index--;
+	}else{
+		vertical_index++;
+	}
+	if(vertical_index==NUM_OF_BANNERS){
+		vertical_index=0;
+	}
+	if(vertical_index<0){
+		vertical_index=NUM_OF_BANNERS-1;
+	}
+	for (var i = 0; i < NUM_OF_BANNERS; i++) {
+		if(i==vertical_index){
+			BannerItems[i].style.display="block";
+		}else{
+			BannerItems[i].style.display="none";
+		}
+	}	
+}
+
+
+for (var i = 0; i < NUM_OF_BANNERS; i++) {
+	if(i==vertical_index){
+		BannerItems[i].style.display="block";
+	}else{
+		BannerItems[i].style.display="none";
+	}
+}	
+
+banner_top=document.getElementById("banner-top-slider");
+banner_bottom=document.getElementById("banner-bottom-slider");
+banner_top.addEventListener('click',function(){
+	console.log("clicked");
+	changeBanner(false);
+})
+banner_bottom.addEventListener('click',function(){
+	changeBanner(true);
+})

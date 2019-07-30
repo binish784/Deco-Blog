@@ -91,9 +91,6 @@
 	position: relative;
 }
 
-.banner ul li:last-child{
-	display: none;
-}
 
 .banner ul li img{
 	width: 100%;
