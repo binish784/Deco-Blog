@@ -100,10 +100,18 @@
 	position: absolute;
 	font-family: hind;
 	font-weight: 400;
-	top: 46%;
-	right: -50px;
+	/*top: 46%;
+	*/
+	/*right: 15px;*/
+
+	top:30%;
+	right: 15px;
 	transform: rotate(-90deg);
 	color: white;
+}
+
+.featured-text{
+	display: none;
 }
 
 .banner-slider span a{
@@ -810,6 +818,15 @@ iframe{
 }
 
 @media only screen and (min-width: 768px){
+
+	.banner-slider{
+		top:46%;
+		right: -50px;
+	}
+
+	.featured-text{
+		display: inline;
+	}
 
 	#slider-wrapper{
 		display: none;
