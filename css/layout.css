@@ -141,6 +141,7 @@
 	font-weight: 700;
 	font-size: 10px;
 	line-height: 55px;
+	text-transform: uppercase;
 }
 
 
@@ -396,6 +397,7 @@
 .post-heading{
 	font-family: 'Montserrat', sans-serif;
 	margin: 22px 0px;
+	text-transform: uppercase;
 }
 
 .post-icon{
@@ -405,6 +407,7 @@
 }
 
 .post-category{
+	text-transform: uppercase;
 	color:#c9c9ca;
 }
 
@@ -527,6 +530,7 @@
 	font-size: 20px;
 	padding-bottom: 20px;
 	border-bottom: 1px solid #f7f7f7;
+	text-transform: uppercase;
 }
 
 .block-content ul{
@@ -552,6 +556,7 @@
 }
 
 .category-text{
+	text-transform: uppercase;
 	float: left;
 }
 
@@ -583,6 +588,7 @@
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
 	color: #212121; 
+	text-transform: uppercase;
 }
 
 .latest-post-content p:first_child{
