@@ -191,6 +191,11 @@
 	border: none;
 }
 
+.subscribe-Button input:hover{
+	background-color: #7b7b7b;
+	cursor: pointer;
+}
+
 .image-wrapper{
 	line-height: 0px;
 }
@@ -506,6 +511,11 @@
 	color: white;
 }
 
+.search-button div:hover{
+	background-color: #7b7b7b;
+	cursor: pointer;
+}
+
 .adsense-wrapper{
 	display: none;
 }
@@ -729,6 +739,7 @@
 }
 
 .footer-block-heading{
+	text-transform: uppercase;
 	font-family: 'Montserrat', sans-serif;
 	padding-bottom: 40px;
 	padding-top: 20px;
